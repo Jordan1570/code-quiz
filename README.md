@@ -10,6 +10,10 @@
 
 ## Usage 
 
+file:///C:/Users/knigh/code-quiz/index.html
+
+https://jordan1570.github.io/code-quiz/
+
 - When you first hit the homepage you will read the instructions then press the start button. 
 
 - After that you will be presented with your first question and a timer. 
