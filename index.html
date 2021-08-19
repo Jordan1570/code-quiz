@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,70 +8,81 @@
     <link href="style.css" rel="stylesheet">
     <title>Document</title>
 </head>
+
 <body>
     <header>Coding Quiz Challenge</header>
     <h4 id="score"></h4>
-        <div class="start">
-            <p>You will be asked a series of coding questions. For every question you get wrong the timer will deduct 10 seconds. Good Luck!</p>
-            <button id="startBtn">Start</button>
-        </div>
-        <div id="questionOne" class="hidden">
-            <p>What do I use to style the HTML?</p>
-                <button class='answers' value="correct">A) CSS </button>
-                <button class='answers' value="incorrect">B) JavaScript </button>
-                <button class='answers' value="incorrect">C) Jquery</button>
-                <button class='answers' value="incorrect">D) Python </button>
+    <h3 id='timer'></h3>
+    <div class="start">
+        <p>You will be asked a series of coding questions. For every question you get wrong the timer will deduct 10
+            seconds. Good Luck!</p>
+        <button id="startBtn">Start</button>
+    </div>
+    <div id="questionOne" class="hidden">
+        <p>What do I use to style the HTML?</p>
+        <button class='answersOne' value="correct">A) CSS </button>
+        <button class='answersOne' value="incorrect">B) JavaScript </button>
+        <button class='answersOne' value="incorrect">C) Jquery</button>
+        <button class='answersOne' value="incorrect">D) Python </button>
+    </div>
 
-        </div>
+    <div id='questionTwo' class='hidden'>
+        <p>What denotes a class?</p>
+        <button class='answersTwo' value="incorrect">A) Parenthesis </button>
+        <button class='answersTwo' value="incorrect">B) Hashtag </button>
+        <button class='answersTwo' value="correct">C) Period </button>
+        <button class='answersTwo' value="incorrect">D) None of the above </button>
+    </div>
 
-        <div id='questionTwo' class='hidden'>
-            <p>What denotes a class?</p>
-                <button class='answers' value="incorrect">A) Parenthesis </button>
-                <button class='answers' value="incorrect">B) Hashtag </button>
-                <button class='answers' value="correct">C) Period </button>
-                <button class='answers' value= "incorrect">D) None of the above </button>
-        </div>
+    <div id='questionThree' class='hidden'>
+        <p>What denotes an ID?</p>
+        <button class='answersThree' value="correct">A) Hashtag </button>
+        <button class='answersThree' value="incorrect">B) Period </button>
+        <button class='answersThree' value="incorrect">C) Just Quotes </button>
+        <button class='answersThree' value="incorrect">D) None of the above </button>
+    </div>
 
-        <div id='questionThree' class='hidden'>
-            <p>What denotes an ID?</p>
-                <button class='answers' value="correct">A) Hashtag </button>
-                <button class='answers' value="incorrect">B) Period </button>
-                <button class='answers' value="incorrect">C) Just Quotes </button>
-                <button class='answers' value= "incorrect">D) None of the above </button>
-        </div>
+    <div id='questionFour' class='hidden'>
+        <p>Can we create a website with just JavaScript?</p>
+        <button class='answersFour' value="incorrect">A) JavaScript is for styling only </button>
+        <button class='answersFour' value="incorrect">B) We must use HTML </button>
+        <button class='answersFour' value="incorrect">C) No </button>
+        <button class='answersFour' value="correct">D) Yes </button>
+    </div>
 
-        <div id='questionFour' class='hidden'>
-            <p>Can we create a website with just JavaScript?</p>
-                <button class='answers' value="incorrect">A) JavaScript is for styling only </button>
-                <button class='answers' value="incorrect">B) We must use HTML </button>
-                <button class='answers' value="incorrect">C) No </button>
-                <button class='answers' value= "correct">D) Yes </button>
+    <div id='questionFive' class='hidden'>
+        <p>Where can we check our code in the browser?</p>
+        <button class='answersFive' value="incorrect">A) You can't</button>
+        <button class='answersFive' value="incorrect">B) A Third Party Website</button>
+        <button class='answersFive' value="correct">C) Console </button>
+        <button class='answersFive' value="incorrect">D) API </button>
+    </div>
 
-        <div id='questionFive' class='hidden'>
-            <p>Where can we check our code in the browser?</p>
-                <button class='answers' value="incorrect">A) You can't</button>
-                <button class='answers' value="incorrect">B) A Third Party Website</button>
-                <button class='answers' value="correct">C) Console </button>
-                <button class='answers' value= "incorrect">D) API </button>
-        </div>
+    <div id='questionSix' class='hidden'>
+        <p>How do you get better at software development?</p>
+        <button class='answersSix' value="incorrect">A) Practice </button>
+        <button class='answersSix' value="incorrect">B) Study Groups </button>
+        <button class='answersSix' value="incorrect">C) Asking Questions </button>
+        <button class='answersSix' value="correct">D) All Of The Above </button>
+    </div>
 
-        <div id='questionSix' class='hidden'>
-            <p>How do you get better at software development?</p>
-                <button class='answers' value="incorrect">A) Practice </button>
-                <button class='answers' value="incorrect">B) Study Groups </button>
-                <button class='answers' value="incorrect">C) Asking Questions </button>
-                <button class='answers' value= "correct">D) All Of The Above </button>
-        </div>
+    <div id='questionSeven' class='hidden'>
+        <p>What is the purpose of Jquery?</p>
+        <button class='answersSeven' value="incorrect">A) Create Everything At Once </button>
+        <button class='answersSeven' value="incorrect">B) Pair with JavaScript </button>
+        <button class='answersSeven' value="correct">C) Simplify JavaScript </button>
+        <button class='answersSeven' value="incorrect">D) None Of The Above </button>
+    </div>
 
-        <div id='questionSeven' class='hidden'>
-            <p>What is the purpose of Jquery?</p>
-                <button class='answers' value="incorrect">A) Create Everything At Once </button>
-                <button class='answers' value="incorrect">B) Pair with JavaScript </button>
-                <button class='answers' value="correct">C) Simplify JavaScript </button>
-                <button class='answers' value= "incorrect">D) None Of The Above </button>
-        </div>
-        
-        
-<script src="script.js"></script>
+    <div id='scoreList' class='hidden'>
+        <h2>Your Score</h2>
+        <h4 id='finalScore'></h4>
+        <input id='initials' placeholder="Enter Your Initials">
+            <button id='save'>Save Score</button>
+        </input>
+    </div>
+    
+    <script src="script.js"></script>
 </body>
+
 </html>

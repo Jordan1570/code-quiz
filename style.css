@@ -1,3 +1,67 @@
 .hidden {
     display: none;
 }
+}
+body {
+    text-align: center;
+    background-color: sienna;
+}
+
+p {
+    text-align: center;
+    font-size: 17px;
+}
+
+.start {
+    text-align: center;
+}
+
+.answersOne {
+    text-align: center;
+}
+
+.answerTwo {
+    text-align: center;
+}
+
+.answerThree {
+    text-align: center;
+}
+
+.answerFour {
+    text-align: center;
+}
+
+.answerFive {
+    text-align: center;
+}
+
+.answerSix {
+    text-align: center;
+}
+
+.answerSeven {
+    text-align: center;
+}
+
+button {
+    text-align: center;
+}
+
+h3 {
+    text-align: center;
+}
+
+div {
+    text-align: center;
+}
+
+header {
+    text-align: center;
+    background-color: seagreen;
+    font-size: 30px;
+}
+
+h4 {
+    text-align: center;
+}
